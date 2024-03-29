@@ -1,0 +1,41 @@
+/* FormSelect.module.css */
+.selectContainer {
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.selectContainer select {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.selectContainer::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+}
+
+.selectContainer select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #17a2b8;
+}
